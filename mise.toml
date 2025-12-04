@@ -1,16 +1,13 @@
 min_version = "2025.11.3"
 
-[settings]
-experimental = true
-idiomatic_version_file_enable_tools = [
-  "python",
-]
-
 [env]
 _.file = ".env"
 _.python.venv = { path = ".venv", create = true }
 
 [tools]
+cmake = "4.2"
+make = "4.4"
+python = "3.11"
 
 [tasks."setup"]
 run = """
